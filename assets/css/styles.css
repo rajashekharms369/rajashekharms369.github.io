@@ -347,14 +347,25 @@ img {
 }
 
 .skill_ui {
-  width: 85%;
+  width: 75%;
 }
 
-/* WORK */
-
-.work {
-  text-align: center;
+.skill_ui_1 {
+  width: 80%;
 }
+
+.skill_ui_2 {
+  width: 70%;
+}
+
+.skill_ui {
+  width: 75%;
+}
+
+/* Project */
+
+
+/* 
 
 .work_container {
   row-gap: 2rem;
@@ -373,8 +384,49 @@ img {
 
 .work_img img:hover {
   transform: scale(1.1);
+} */
+
+.work_container{
+  row-gap: 3rem;
 }
 
+
+.card {
+  margin-top: 4rem;
+  display: grid;
+  place-items: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 95%;
+}
+
+.card:hover .card__reveal--up {
+  transform: translateY(-100%);
+}
+
+
+.card h2 {
+  padding: 7rem;
+  margin: 0;
+}
+
+.card__content {
+  display: block;
+  background: #fff;
+  color: #000;
+}
+
+.card__reveal {
+  position: absolute;
+  background: #1f122c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
 /* Contact */
 
 .control_input {
@@ -523,4 +575,35 @@ img {
   .home_img {
     right: 10%;
   }
+}
+
+
+
+
+
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
 }
