@@ -388,7 +388,6 @@ img {
 
 .work_container{
   row-gap: 3rem;
-<<<<<<< HEAD
 }
 
 
@@ -418,37 +417,6 @@ img {
   color: #000;
 }
 
-=======
-}
-
-
-.card {
-  margin-top: 4rem;
-  display: grid;
-  place-items: center;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  height: 95%;
-}
-
-.card:hover .card__reveal--up {
-  transform: translateY(-100%);
-}
-
-
-.card h2 {
-  padding: 7rem;
-  margin: 0;
-}
-
-.card__content {
-  display: block;
-  background: #fff;
-  color: #000;
-}
-
->>>>>>> 39cf1aee1217f1ae35d32d004136ffbfa1ae7585
 .card__reveal {
   position: absolute;
   background: #1f122c;
