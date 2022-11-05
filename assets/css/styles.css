@@ -218,15 +218,19 @@ img {
 
 .home_img {
   position: absolute;
-  right: 0;
+  /* background-color: #000; */
+  margin-right: -3%;
   bottom: 0;
   width: 300px;
 }
 
-.home_img svg {
-  width: 100%;
+@media screen and (max-width: 480px) {
+  .home_img {
+    position: absolute;
+    right: 0px;
+    bottom: 17%;
+  }
 }
-
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -606,4 +610,25 @@ input[type="submit"] {
   background-color: #4460AA;
   color: #fff;
   border: none
+}
+
+
+
+/* Stats section */
+
+.git_hub_stats_section{
+  margin-top: 6%;
+}
+
+.git-stats{
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 480px) {
+  .git-stats{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    justify-content: space-evenly;
+  }
 }
