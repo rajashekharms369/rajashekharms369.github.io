@@ -406,7 +406,7 @@ img {
 }
 
 .card:hover .card__reveal--up {
-  transform: translateY(-100%);
+  transform: translateY(-10/80%);
 }
 
 
