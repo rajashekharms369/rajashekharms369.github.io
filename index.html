@@ -30,12 +30,12 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#statistics">Statistics</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a id="res" target="_blank" href="https://drive.google.com/file/d/1hRPGpMmUfHvnX2DLCpIEChxMVa03P6PP/view?usp=sharing" download="Rajashekhar_Sambalad_Resume" target="_blank">Resume &nbsp;<span><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></span> </a></li>
+                    <li><a id="res" target="_blank" onclick="newWindowResume()" href="/Portfolio-WebSite/Portfolio WebSite/images/Rajashekhar_Sambalad_Resume.pdf" download="fw19_1304_Rajashekhar_Sambalad_Resume" target="_blank">Resume &nbsp;<span><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></span> </a></li>
                 </ul>
             </div>
         </div>
     </header>
-<!-- --------------HOME-------------- -->
+<!----------------HOME---------------->
     <section class="home" id="home">
         <div class="inner-width">
             <div class="home-content">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="contact">
                     <a href="#contact">Contact me</a>
-                    <!-- <a href="/Portfolio-WebSite/Portfolio WebSite/images/Rajashekhar_Sambalad_Resume.pdf" download="Rajashekhar_Sambalad_Resume" target="_blank">My Resume <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a> -->
+                    <a onclick="newWindowResume()" href="/Portfolio-WebSite/Portfolio WebSite/images/Rajashekhar_Sambalad_Resume.pdf" download="fw19_1304_Rajashekhar_Sambalad_Resume" target="_blank">My Resume <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
                 </div>
             </div>
             
@@ -413,6 +413,10 @@ document.getElementById('form')
         duration: 1200,
         once: false,
       });
+
+      function newWindowResume(){
+        window.open("https://drive.google.com/file/d/1hRPGpMmUfHvnX2DLCpIEChxMVa03P6PP/view?usp=share_link");
+      }
     </script>
 </body>
 </html>
