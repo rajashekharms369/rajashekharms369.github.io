@@ -44,16 +44,16 @@
     <section class="home" id="home">
         <div class="inner-width">
             <div class="home-content">
-                <div class="main--img"><img src="images/09_2022_profile_pic.jpeg" alt=""></div>
+                <div class="main--img"><img src="images/Rajashekhar_Profile_pic.png" alt=""></div>
                 <h1>Hi! I'm Rajashekhar Sambalad</h1>
                 <h1>I'm a Java Developer</h1>
-                <div class="icon">
+                <!-- <div class="icon">
                     <a target="_blank" href="https://www.facebook.com/profile.php?id=100017684471448"><i class="fab fa-facebook-f"></i></a>
                     <a target="_blank" href="https://twitter.com/rajmkumar369"><i class="fab fa-twitter"></i></a>
                     <a target="_blank" href="https://www.instagram.com/rajshekharms/"><i class="fab fa-instagram"></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/rajashekhar-m-s-2875a3175/"><i class="fab fa-linkedin-in"></i></a>
                     <a target="_blank" href="https://github.com/rajashekharms369"><i class="fab fa-github"></i></a>
-                </div>
+                </div> -->
                 <div class="contact">
                     <a href="#contact">Contact me</a>
                     <a onclick="newWindowResume()" href="/Portfolio-WebSite/Portfolio WebSite/images/Rajashekhar_Sambalad_Resume.pdf" download="fw19_1304_Rajashekhar_Sambalad_Resume" target="_blank">My Resume <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
@@ -470,5 +470,32 @@ document.getElementById('form')
         window.open("https://drive.google.com/file/d/1hRPGpMmUfHvnX2DLCpIEChxMVa03P6PP/view?usp=share_link");
       }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
 </body>
 </html>
