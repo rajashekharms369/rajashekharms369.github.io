@@ -337,6 +337,25 @@ section
 .c::after{
     width: 50%;
 }
+
+
+
+/* ---------------- Tools ---------------- */
+.tools{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool img{
+    width: 60px;
+}
+
+
+
+
 /* ------------------------------------SERVICES------------------------------------ */
 .dark
 {
@@ -489,8 +508,8 @@ section
     bottom: 0;
     left: 0;
     color: #777;
-    z-index: 2;
-    opacity: 0;
+    z-index: 1;
+    opacity: 1;
     background-color: rgba(255, 255, 255,.87);
     transition: all .2s linear;
 }
@@ -510,6 +529,15 @@ section
 {
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
 /* ------------------------------------CONTACT------------------------------------ */
 .contact-content
 {
@@ -707,6 +735,10 @@ footer
     {
         margin: 20px 0;
     }
+    .nav-link .links li a
+    {
+        color: white;
+    }
     .sticky .inner-width .nav-link
     {
         top: 0;
@@ -746,6 +778,33 @@ footer
         font-size: 25px;
         color: white;
     }
+
+
+    .tools{
+        margin-top: 10px;
+        margin-left: -25px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .tool{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        width: 80%;
+        /* background-color: #2980b9; */
+    }
+    .tool img{
+        justify-content: center;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+    .tool h3{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 600px)
 {
@@ -754,6 +813,7 @@ footer
         width: calc(100% - 20px);
         transition: all .5 linear;
     }
+    
     .services-content .service
     {
         width: calc(100% - 10px);
@@ -812,6 +872,32 @@ footer
     background-size: contain; */
     color: black;
     font-size: 25px;
+}
+
+.tools{
+    margin-top: 10px;
+    margin-left: -25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.tool{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 80%;
+    /* background-color: #2980b9; */
+}
+.tool img{
+    justify-content: center;
+    width: 50px;
+    margin-bottom: 15px;
+}
+.tool h3{
+    font-size: 18px;
 }
 }
 
